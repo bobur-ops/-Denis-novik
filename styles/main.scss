@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+}
+button {
+	outline: none;
+}
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #F6F6F6;
+  border-radius: 20px;
+
+}
+::-webkit-scrollbar-thumb {
+  background: #070707;
+  border-radius: 20px;
+}
+.container {
+	width: 100%;
+	max-width: 974px;
+	margin: 0 auto;
+}
+.header {
+	padding: 0 30px;
+	margin-bottom: 105px;
+	position: relative;
+	&__navs {
+		border-bottom: 1px solid  #828282;
+		display: block;
+		ul {
+			margin: 0;
+			padding: 33px 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			li {
+				list-style: none;
+				a{
+					text-decoration: none;
+					font-family: Khula;
+					font-size: 18px;
+					font-weight: bold;
+					line-height: 22px;
+					white-space: nowrap;
+					color:  #828282;
+					&:hover {
+						color: #070707;
+					}
+				}
+			}
+		}
+	}
+	&__burgerMenu {
+		height: 0;
+		transition: .3s;
+		overflow: hidden;
+		&.active {
+			height: 0;
+		}
+		&_flex {
+			display: flex;
+			justify-content: space-between;
+			align-items: top;
+		}
+		ul {
+			margin: 0;
+			padding: 0 30;
+			li {
+				list-style: none;
+				margin-bottom: 68px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				a {
+					text-decoration: none;
+					font-family: Khula;
+					font-size: 18px;
+					font-weight: bold;
+					line-height: 22px;
+					white-space: nowrap;
+					color:  #828282;
+					&:hover {
+						color: #070707;
+					}
+				}
+			}
+		}
+		&_language {
+			position: absolute;
+			height: 0;
+			overflow: hidden;
+			font-family: "Khula";
+			font-weight: bold;
+			font-size: 34px;
+			line-height: 42px;
+			color: #828282;
+			transform: rotate(90deg);
+			button {
+				font-family: "Khula";
+				font-weight: bold;
+				font-size: 34px;
+				line-height: 42px;
+				color: #828282;
+				border: none;
+				padding: 0;
+				margin: 0;
+				background: transparent;
+				&.active {
+					color: #000;
+				}
+				&:hover {
+					cursor: pointer;
+					color: #000;
+				}
+			}
+		}
+	}
+	button.closeBurger {
+		display: none;
+		position: absolute;
+		top: 69px;
+		right: 30px;
+	}
+	button.openBurger {
+		display: none;
+		position: absolute;
+		top: 69px;
+		right: 30px;
+	}
+	button.closeBurger,
+	button.openBurger {
+		padding: 0;
+		margin: 0;
+		border: none;
+		background: transparent;
+		&:hover {
+			transition: .3s;
+			cursor: pointer;
+			svg {
+				fill: #000;
+			}
+		}
+		svg {
+			fill: #828282;
+		} 
+	}
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		padding: 37px 0 30px 0;
+		align-items: center;
+	}
+	&__name {
+		font-family: "Khula";
+		font-weight: bold;		
+		font-size: 47.3392px;
+		line-height: 59px;
+		color: #070707;
+	}
+	&__description {
+		font-family: "Khula";
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;	
+		color: #070707;
+	}
+	&__language {
+		display: block;
+		font-family: "Khula";
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+		color: #828282;
+		transform: rotate(-90deg);
+		display: flex;
+		align-items: center; 
+		margin-right: -34px; 
+		button {
+			padding: 0;
+			border: none;
+			background: transparent;
+			margin: 0 5px;
+			color: #828282;
+			&.active {
+				color: #000;
+			}
+			&:hover {
+				cursor: pointer;
+				color: #000;
+			}
+		}
+		&_btn {
+			font-family: "Khula";
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 20px;
+			color: #828282;
+		}
+	}
+	&__image {
+		height: 387px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: 50% 10%;
+		}
+	}
+}
+.about {
+	background: #f6f6f6;
+	padding: 120px 30px 107px 30px;
+	&__wrapper {
+		width: 100%;
+		margin-bottom: 485px;
+		margin: 0 auto;
+	}
+	&__title {
+		font-family: "Khula";
+		font-size: 34px;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 20px;
+		color: #070707;
+		line-height: 42px;
+	}
+	&__text {
+		font-family: "Khula";
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+		color: #070707;
+		margin-bottom: 50px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+.skills {
+	padding: 99px 0 110px 0;
+	&__title {
+		font-family: Khula;
+		font-size: 34px;
+		font-weight: bold;
+		line-height: 42px;
+		text-align: center;
+		color: #070707;
+	}
+	&__subTitle {
+		font-family: Khula;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+		color: #070707;
+		margin-top: 70px;
+		font-weight: 600;
+	}
+	&__cards {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding: 0 30px;
+	}
+	&__card {
+		text-align: center;
+		margin-top: 84px;
+		padding: 0 15px;
+		&_name {
+			font-family: "Khula";
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 17px;
+			text-align: center;
+			color: #828282;
+			max-width: 80px;
+			min-height: 33px;
+			margin: 22px auto 40px;
+		}
+	}
+}
+.portfolio {
+	background: #f6f6f6;
+	padding: 112px 0 0 0;
+	&__title {
+		font-family: "Khula";
+		font-weight: bold;
+		font-size: 34px;
+		line-height: 42px;
+		text-align: center;
+		color: #070707;
+		margin-bottom: 47px;
+	}
+	&__cards {
+		padding: 0 30px;
+	}
+	&__card {
+		padding-bottom: 96px;
+		&_image {
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: 50% 50%
+			}
+		}
+		&_link {
+			margin-top: 45px;
+			text-align: center;
+			a {
+				font-family: "Khula";
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 22px;
+				text-decoration-line: underline;
+				color: #070707;
+			}
+		}
+	}
+}
+.footer {
+	padding: 114px 30px 123px 30px;
+	text-align: center;
+	&__title {
+		font-family: "Khula";
+		font-weight: bold;
+		font-size: 34px;
+		line-height: 42px;
+		text-align: center;
+		color: #070707;
+	}
+	&__subTitle {
+		font-family: "Khula";
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+		color: #070707;
+		max-width: 275px;
+		margin: 0 auto;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	button.footer__buttonSend {
+		padding: 13px 30px 7px;
+		border-radius: 30px;
+		border: none;
+		margin: 0 auto;
+		background: #070707;
+		font-family: "Khula";
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+		color: #FFFFFF;
+		margin-bottom: 85px;
+		cursor: pointer;
+	}
+	&__socials {
+		width: 100%;
+		max-width: 345px;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		a {
+			text-decoration: none;
+		}
+	}
+	&__description {
+		font-family: "Khula";
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+		color: #828282;
+		margin-top: 45px;
+	}
+}
+@media (max-width: 425px) {
+	.header {
+		&__navs{
+			display: none;
+		}
+		&__burgerMenu {
+			&.active {
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				z-index: 3;
+				padding: 66px 0 0 0;
+				height: calc(100vh - 66px);
+				background: #fff;
+				.header__burgerMenu_language {				
+					bottom: 114px;
+					right: -24px;
+					height: auto;
+				}
+				button.closeBurger {
+					display: block;
+				}
+			}
+		}
+		&__wrapper {
+			padding-top: 66px;
+			display: block;
+		}
+		&__description {
+			margin-top: 15px;
+		}
+		button.openBurger {
+			display: block;
+		}
+		&__language {
+			display: none;
+		}
+		&__image {
+			height: 478px;
+		}
+	}
+	.portfolio {
+		&__card {
+			padding-bottom: 80px;
+		}
+	}
+	.footer {
+		padding: 82px 30px 90px 30px;
+		button.footer__buttonSend {
+			margin-top: 9px;
+			margin-bottom: 48px;
+			width: 100%
+		}
+	}
+}

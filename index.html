@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Landing</title>
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+	<header class="container">
+		<div class="header">
+			<div class="header__navs" id="headerNavs">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About me</a></li>
+					<li><a href="#">Skills</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Contacts</a></li>
+				</ul>
+			</div>
+			<div class="header__burgerMenu" id="headerBurgerMenu">
+				<div class="header__burgerMenu_flex">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About me</a></li>
+						<li><a href="#">Skills</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">Contacts</a></li>
+					</ul>
+					<button class="closeBurger" onclick="closeBurger()">
+						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect x="2.68701" width="27.3715" height="3.8" transform="rotate(45 2.68701 0)"/>
+							<rect x="0.831299" y="19.5566" width="27.3715" height="3.8" transform="rotate(-45 0.831299 19.5566)"/>
+						</svg>
+					</button>
+				</div>	
+				<div class="header__burgerMenu_language">
+					<button class="header__burgerMenu_languageBtn">RU</button>
+					| 
+					<button class="header__burgerMenu_languageBtn active">ENG</button>
+				</div>
+			</div>
+			<div class="header__wrapper">
+				<div class="header__name">
+					Denis
+					<br>
+					Novik
+				</div>
+				<div class="header__description">
+					UX | UI designer
+					<br>
+					24 years old, Minsk
+				</div>
+				<div class="header__language">
+					<button class="header__language_btn">RU</button>
+					| 
+					<button class="header__language_btn active">ENG</button>
+				</div>
+				<button class="openBurger" onclick="openBurger()">
+					<svg width="33" height="20" viewBox="0 0 33 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="33" height="3.83721"/>
+						<rect y="7.67383" width="33" height="3.83721"/>
+						<rect y="15.3496" width="33" height="3.83721"/>
+					</svg>
+				</button>
+			</div>		
+			<div class="header__image">
+				<img src="images/png/1.png">
+			</div>	
+		</div>			
+	</header>
+	<div class="about">
+		<div class="about__wrapper">
+			<div class="about__title">About me</div>
+			<div class="about__text">
+				Hi, I'm Denis – UX/UI designer from Minsk. 
+				I'm interested in design and everything connected with it.
+			</div>
+			<div class="about__text">
+				I'm studying at courses "Web and mobile design 
+				interfaces" in IT-Academy.
+			</div>
+			<div class="about__text">
+				Ready to implement excellent projects
+				with wonderful people.
+			</div>
+		</div>
+	</div>
+	<div class="skills container">
+		<div class="skills__title">Skills</div>
+		<div class="skills__subTitle">I work in such programs as</div>
+		<div class="skills__cards">
+			<div class="skills__card">
+				<div class="skills__card_image">
+					<img src="images/svg/PS.svg">
+				</div>
+				<div class="skills__card_name">Adobe Photoshop</div>
+				<div class="skills__card_stars">
+					<img src="images/svg/4-stars.svg">
+				</div>
+			</div>
+			<div class="skills__card">
+				<div class="skills__card_image">
+					<img src="images/svg/AI.svg">
+				</div>
+				<div class="skills__card_name">Adobe Illustrator</div>
+				<div class="skills__card_stars">
+					<img src="images/svg/3-stars.svg">
+				</div>
+			</div>
+			<div class="skills__card">
+				<div class="skills__card_image">
+					<img src="images/svg/AE.svg">
+				</div>
+				<div class="skills__card_name">Adobe After Effects</div>
+				<div class="skills__card_stars">
+					<img src="images/svg/4-stars.svg">
+				</div>
+			</div>
+			<div class="skills__card">
+				<div class="skills__card_image">
+					<img src="images/svg/Figma.svg">
+				</div>
+				<div class="skills__card_name">Figma</div>
+				<div class="skills__card_stars">
+					<img src="images/svg/4-stars.svg">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio">
+		<div class="portfolio__title">Portfolio</div>
+		<div class="container">
+			<div class="portfolio__cards">
+				<div class="portfolio__card">
+					<div class="portfolio__card_image">
+						<img src="images/png/2.png">
+					</div>
+					<div class="portfolio__card_link">
+						<a href="#">Online fashion store - Homepage</a>
+					</div>
+				</div>
+				<div class="portfolio__card">
+					<div class="portfolio__card_image">
+						<img src="images/png/3.png">
+					</div>
+					<div class="portfolio__card_link">
+						<a href="#">Reebok Store - Concept</a>
+					</div>
+				</div>
+				<div class="portfolio__card">
+					<div class="portfolio__card_image">
+						<img src="images/png/4.png">
+					</div>
+					<div class="portfolio__card_link">
+						<a href="#">Braun Landing Page - Concept</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer">
+			<div class="footer__title">Contacts</div>
+			<div class="footer__subTitle">Want to know more or just chat? You are welcome!</div>
+			<button class="footer__buttonSend">Send message</button>
+			<div class="footer__socials">
+				<a href="#">
+					<img src="images/svg/ic-1.svg">
+				</a>
+				<a href="#">
+					<img src="images/svg/ic-2.svg">
+				</a>
+				<a href="#">
+					<img src="images/svg/ic-3.svg">
+				</a>
+				<a href="#">
+					<img src="images/svg/ic-4.svg">
+				</a>
+			</div>
+			<div class="footer__description">
+				Like me on
+				<br>
+				LinkedIn, Instagram, Behance, Dribble
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
